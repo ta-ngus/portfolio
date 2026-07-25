@@ -11,21 +11,21 @@ export default function Projects() {
     },
     {
       number: "02",
-      title: "Real-Time Analytics Dashboard",
-      description: "A modern real-time analytics dashboard that has a WebSocket straeming data, interactive D3.js line charts and gauge visualizations, live metrics grid with key performance indicators. Has system monitoring (CPU, Memory, Network). Connection status indicator with smooth animations and transitions.",
-      tech: ["Node.js", "Python3.8+", "MongoDB"],
+      title: "AI Research Automator",
+      description: "An automated multi-agent AI research pipeline that searches the web and generates structured Markdown reports. Powered by three specialized CrewAI agents running a local Llama 3.2 model via Ollama — no API keys required.",
+      tech: ["Python 3.11", "CrewAI", "Ollama", "Llama 3.2", "LiteLLM", "DuckDuckGo Search", "WSL2", "Markdown"],
       color: "#06B6D4",
-      github: "https://github.com",
-      live: "https://example.com",
+      github: "https://github.com/ta-ngus/AI-Research-Automator",
+      live: null,
     },
     {
       number: "03",
-      title: "KAM",
-      description: "Reporting & remittance management system. It's still under construction",
-      tech: ["Python", "Express", "REST API"],
+      title: "Muren",
+      description: "A modern tech company website built with a signature brand identity — featuring custom clip-path shapes, cursor-tracking spotlight effects, scroll-triggered animations, and a fully custom component library built from scratch with no external UI dependencies.",
+      tech: ["Next.js", "TypeScript", "Tailwind CSS v4", "Space Grotesk", "Manrope", "IBM Plex Mono", "Vercel"],
       color: "#EC4899",
-      github: "https://github.com",
-      live: "https://example.com",
+      github: "https://github.com/ta-ngus/muren",
+      live: "https://muren-lime.vercel.app",
     },
     {
       number: "04",
@@ -81,9 +81,15 @@ export default function Projects() {
                   <a href={project.github} target="_blank" style={{ fontFamily: "var(--font-mono)", fontSize: "0.75rem", padding: "0.5rem 0.75rem", border: "1px solid rgba(240,246,255,0.1)", color: "#8B949E", borderRadius: "0.5rem", textDecoration: "none" }}>
                     GitHub ↗
                   </a>
-                  <a href={project.live} target="_blank" style={{ fontFamily: "var(--font-mono)", fontSize: "0.75rem", padding: "0.5rem 0.75rem", borderRadius: "0.5rem", color: "#030712", fontWeight: 600, textDecoration: "none", background: `linear-gradient(135deg, ${project.color}, #06B6D4)` }}>
-                    Live ↗
-                  </a>
+                  {project.live ? (
+                    <a href={project.live} target="_blank" style={{ fontFamily: "var(--font-mono)", fontSize: "0.75rem", padding: "0.5rem 0.75rem", borderRadius: "0.5rem", color: "#030712", fontWeight: 600, textDecoration: "none", background: `linear-gradient(135deg, ${project.color}, #06B6D4)` }}>
+                      Live ↗
+                    </a>
+                  ) : (
+                    <span style={{ fontFamily: "var(--font-mono)", fontSize: "0.75rem", padding: "0.5rem 0.75rem", borderRadius: "0.5rem", color: "#64748B", border: "1px solid rgba(240,246,255,0.05)" }}>
+                      Local
+                    </span>
+                  )}
                 </div>
               </div>
             </div>

@@ -83,7 +83,7 @@ export default function Hero() {
           <span style={{ color: "#6366F1" }}>/</span>
           <a href="https://linkedin.com" target="_blank" style={{ fontFamily: "var(--font-mono)", fontSize: "0.875rem", color: "#8B949E", textDecoration: "none" }}>LinkedIn</a>
           <span style={{ color: "#6366F1" }}>/</span>
-          <a href="mailto:your@email.com" style={{ fontFamily: "var(--font-mono)", fontSize: "0.875rem", color: "#8B949E", textDecoration: "none" }}>Email</a>
+          <a href="mailto:tanguscherono284@gmail.com" style={{ fontFamily: "var(--font-mono)", fontSize: "0.875rem", color: "#8B949E", textDecoration: "none" }}>Email</a>
         </div>
 
       </div>

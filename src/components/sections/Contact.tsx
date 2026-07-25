@@ -11,7 +11,7 @@ export default function Contact() {
   };
 
   const links = [
-    { label: "Email", value: "your@email.com", href: "mailto:tanguscherono284@gmail.com", color: "#6366F1" },
+    { label: "Email", value: "tanguscherono284@gmail.com", href: "mailto:tanguscherono284@gmail.com", color: "#6366F1" },
     { label: "GitHub", value: "github.com/blessing", href: "https://github.com", color: "#06B6D4" },
     { label: "LinkedIn", value: "linkedin.com/in/blessing", href: "https://www.linkedin.com/in/blessing-cherono", color: "#EC4899" },
   ];
