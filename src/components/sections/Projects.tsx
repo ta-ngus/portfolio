@@ -1,14 +1,14 @@
 export default function Projects() {
   const projects = [
     {
-      number: "01",
-      title: "BiasharaIQ",
-      description: "A bilingual bookkeeping and tax compliance app built for middle-sized businesses in Kenya. Auto-imports M-Pesa transactions via SMS, generates KRA eTIMS compliant invoices, tracks income, expenses and profit, and prepares tax reports for TOT, VAT and PAYE.",
-      tech: ["React Native", "Expo", "Node.js", "Express", "Supabase", "PostgreSQL", "M-Pesa Daraja API", "KRA eTIMS API"],
-      color: "#6366F1",
-      github: null,
-      live: "https://expo.dev/accounts/cherono/projects/mobile/builds/6c067dc0-e45b-4564-824c-c4dafafc69d7",
-    },
+  number: "01",
+  title: "BiasharaIQ",
+  description: "A bilingual bookkeeping and tax compliance app built for middle-sized businesses in Kenya. Auto-imports M-Pesa transactions via SMS, generates KRA eTIMS compliant invoices, tracks income, expenses and profit, and prepares tax reports for TOT, VAT and PAYE.",
+  tech: ["React Native", "Expo", "Node.js", "Express", "Supabase", "PostgreSQL", "M-Pesa Daraja API", "KRA eTIMS API"],
+  color: "#6366F1",
+  github: null,
+  live: "https://expo.dev/accounts/cherono/projects/mobile/builds/6c067dc0-e45b-4564-824c-c4dafafc69d7",
+},
     {
       number: "02",
       title: "Real-Time Analytics Dashboard",
@@ -78,9 +78,24 @@ export default function Projects() {
                   </div>
                 </div>
                 <div style={{ display: "flex", gap: "0.75rem", flexShrink: 0 }}>
-  <a href={project.github} target="_blank" style={{ fontFamily: "var(--font-mono)", fontSize: "0.75rem", padding: "0.5rem 0.75rem", border: "1px solid rgba(240,246,255,0.1)", color: "#8B949E", borderRadius: "0.5rem", textDecoration: "none" }}>
+{project.github && (
+  <a
+    href={project.github}
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      fontFamily: "var(--font-mono)",
+      fontSize: "0.75rem",
+      padding: "0.5rem 0.75rem",
+      border: "1px solid rgba(240,246,255,0.1)",
+      color: "#8B949E",
+      borderRadius: "0.5rem",
+      textDecoration: "none",
+    }}
+  >
     GitHub ↗
   </a>
+)}
   {project.live ? (
     <a href={project.live} target="_blank" style={{ fontFamily: "var(--font-mono)", fontSize: "0.75rem", padding: "0.5rem 0.75rem", borderRadius: "0.5rem", color: "#030712", fontWeight: 600, textDecoration: "none", background: `linear-gradient(135deg, ${project.color}, #06B6D4)` }}>
       Live ↗
