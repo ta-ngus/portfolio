@@ -6,7 +6,7 @@ export default function Projects() {
       description: "A bilingual bookkeeping and tax compliance app built for middle-sized businesses in Kenya. Auto-imports M-Pesa transactions via SMS, generates KRA eTIMS compliant invoices, tracks income, expenses and profit, and prepares tax reports for TOT, VAT and PAYE.",
       tech: ["React Native", "Expo", "Node.js", "Express", "Supabase", "PostgreSQL", "M-Pesa Daraja API", "KRA eTIMS API"],
       color: "#6366F1",
-      github: "https://github.com/Bct3ch/biasharaiq",
+      github: null,
       live: "https://expo.dev/accounts/cherono/projects/mobile/builds/6c067dc0-e45b-4564-824c-c4dafafc69d7",
     },
     {
